@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "baseUrl": "./",
+      "target": "es6",
+      "module": "commonjs",
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "@ktr-logging/index": ["../../../@ktr-logging/index.js"],
+
+        "#projectRoot": ["."],
+        "#projectRoot/*": ["./*.js"],
+
+        "#src": ["./src/index.js"],
+        "#src/*": ["./src/*"],
+
+        "#test/*": ["./test/*.js"],
+      }
+  },
+
+  "exclude": ["node_modules"]
+}
