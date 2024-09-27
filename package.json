@@ -2,7 +2,7 @@
   "name": "@ktr-utility/core_util",
   "version": "0.1.0",
   "type": "module",
-  "private": true,
+  "private": false,
   "packageManager": "yarn@3.5.0",
   "scripts": {
     "dev": "node --trace-warnings --async-stack-traces --experimental-specifier-resolution ./index.js",
