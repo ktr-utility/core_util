@@ -1,9 +1,6 @@
 //import {PinoLogger} from '@ktr-logging/index'
-import {PinoLogger} from '../../../../../@ktr-logging/index.js'
 
 import getPackageJSONasObj from "./getPackageJSONasObj.js"
-
-console.log('PinoLogger', PinoLogger)
 
 
 // console.log(PinoLogger)
@@ -20,7 +17,7 @@ console.log('PinoLogger', PinoLogger)
  * @returns {string} - The scope name or an empty string.
  */
 export default async function getScopeName({ pkgJSONobj, dirname }={}) {
-    if (!dirname) logger.warn(`getScopeName(): dirname is undefined.`)
+    if (!dirname) console.log(`getScopeName(): dirname is undefined.`)
 
     pkgJSONobj = pkgJSONobj || await getPackageJSONasObj(dirname)
 
